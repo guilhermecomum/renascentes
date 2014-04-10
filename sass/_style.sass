@@ -1,6 +1,50 @@
+$link: #FF4F00
+
+.button
+  background: #f4f4f4
+  font-family: "TypeRegular"
+
+section
+  height: 100%
+  width: 100%
+  background: #dddddd
+  border-top: 1px solid black
+  border-bottom: 1px solid black
+
+#welcome
+  background: image-url('welcome.png') no-repeat center center
+  +background-size(cover)
+
+  .download
+    padding-top: 20%
+
+
+  .listen
+    padding: 0 10px
+
+  h1
+    background: image-url('logo.png') no-repeat center center
+    +background-size(70%)
+    text-indent: -9999px
+    overflow: hidden
+    margin-bottom: 40px
+
+  a
+    font-family: "TypeRegular"
+    color: white
+    &:hover
+      color: $link
+
+    &.button
+      color: black
+      width: 200px
+      &:hover
+        background: $link
+
+
 #album
   .cover
-    background-image: url('../images/cover.png')
+    background-image: image-url('cover.png')
     width: 690px
     height: 333px
     display: block
