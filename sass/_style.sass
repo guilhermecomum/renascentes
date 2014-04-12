@@ -1,5 +1,23 @@
 $link: #FF4F00
 
+h2
+  font-family: "TypeRegular"
+
+
+a
+  font-family: "TypeRegular"
+  color: white
+  &:hover
+    color: $link
+
+  &.button
+    color: black
+    width: 240px
+    font-size: rem-calc(20)
+    &:hover
+      background: $link
+
+
 .button
   background: #f4f4f4
   font-family: "TypeRegular"
@@ -7,17 +25,14 @@ $link: #FF4F00
 section
   height: 100%
   width: 100%
-  background: #dddddd
-  border-top: 1px solid black
-  border-bottom: 1px solid black
 
 #welcome
+
   background: image-url('welcome.png') no-repeat center center
   +background-size(cover)
 
   .download
     padding-top: 20%
-
 
   .listen
     padding: 0 10px
@@ -29,20 +44,21 @@ section
     overflow: hidden
     margin-bottom: 40px
 
-  a
-    font-family: "TypeRegular"
-    color: white
-    &:hover
-      color: $link
-
-    &.button
-      color: black
-      width: 200px
+  ul
+    a
+      font-size: rem-calc(20)
+      color: white
       &:hover
-        background: $link
+        color: $link
 
 
 #album
+  background: image-url('album.png') fixed center center
+  +background-size(cover)
+
+  .format
+    padding-top: 18%
+
   .cover
     background-image: image-url('cover.png')
     width: 690px
@@ -57,12 +73,118 @@ section
     color: white
     text-align: center
     overflow: hidden
-    padding: 70px
+    padding: 70px 0
+
+    ul
+      width: 210px
+      margin: 0 auto
 
     .button
-      margin: 0
+      margin: 0 0 5px 0
 
     p
       display: block
       clear: both
       font-size: rem-calc(12)
+
+#band
+  background: image-url('band.png') fixed center center
+  +background-size(cover)
+  color: white
+
+  .stream
+    font-family: "Dosis"
+    padding-top: 12%
+    text-align: center
+    @media only screen and (min-width: 120.063em)
+      padding-top: 50%
+
+    p
+      margin-top: 10px
+      font-size: rem-calc(20)
+    a
+      font-family: "Dosis"
+      &:hover
+        color: $link
+
+#schedule
+  background: image-url('agenda.png') fixed center center
+  +background-size(cover)
+  text-align: center
+
+  .calendar
+    padding-top: 16%
+
+  table
+    width: 100%
+    border-top: 1px solid black
+    border-bottom: 1px solid black
+    font-family: "Dosis"
+
+    td
+      font-size: rem-calc(18)
+
+    .day
+      text-align: center
+    .city
+      text-align: right
+
+#contact
+  text-align: center
+  font-family: "Dosis"
+
+  .form
+    padding-top: 60px
+
+  .typewriter
+    border-top: 1px solid black
+    border-bottom: 1px solid black
+
+    .contact
+      font-family: "Dosis"
+      padding: 25px 0
+
+      img
+        margin-bottom: 10px
+
+      p
+        margin: 0
+        font-size: rem-calc(20)
+
+        &.tel
+          font-size: rem-calc(20)
+
+      a
+        color: black
+        font-size: rem-calc(16)
+        font-family: "Dosis"
+
+    form
+      text-align: left
+      margin-top: 70px
+
+      input, textarea
+        font-size: rem-calc(20)
+
+      a.button
+        width: auto
+        font-family: "Dosis"
+        border: 1px solid #CCC
+
+    fieldset
+      border: 0 none
+      margin: 0
+      padding: 0
+
+      legend
+        display: none
+
+    .success-msg, .error-message
+      display: none
+
+  h4
+    background: image-url('logo-footer.png') no-repeat center center
+    text-indent: -9999px
+    overflow: hidden
+    margin-bottom: 40px
+    margin-top: 20px
