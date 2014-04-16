@@ -11,7 +11,7 @@ if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['telefone'])
     //====================================================
     $email_destinatario = "guerrinha@comum.org"; // qualquer email pode receber os dados
     $email_reply = "$email";
-    $email_assunto = "Site teste";
+    $email_assunto = "[Renascentes] - Contato via site";
     //====================================================
 
 
@@ -52,28 +52,41 @@ if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['telefone'])
 
 }
 ?>
+
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Renascentes</title>
+    <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
     <section id="welcome">
+      <div class="social">
+        <ul class="inline-list">
+          <li><a href="http://facebook.com/renascentes"><img src="images/header_fb.png"></a></li>
+          <li><a href="http://twitter.com/renascentes"><img src="images/header_twit.png"></a></li>
+          <li><a href="http://youtube.com/renascentespoa"><img src="images/header_yt.png"></a></li>
+        </ul>
+      </div>
       <div class="row">
-        <div class="download">
-          <div class="large-7 large-centered columns">
+        <div class="large-7 large-centered columns">
+          <div class="download">
             <h1 class="text-center">Renascentes</h1>
-            <div class="listen clearfix">
-              <a class="button left radius" href="">Baixar o disco</a>
-              <a class="button right radius" href="">Ouça agora</a>
+            <div class="row listen clearfix">
+              <div class="large-6 medium-12 small-12 small-centered large-uncentered columns">
+                <a class="button baixar radius" href="#album">Baixar o disco</a>
+              </div>
+              <div class="large-6 medium-12 small-12 small-centered large-uncentered columns">
+                <a class="button ouvir radius" href="#band">Ouça agora</a>
+              </div>
             </div>
             <ul class="side-nav">
-              <li><a class="text-center" href="">Agenda</a></li>
-              <li><a class="text-center" href="">Contato</a></li>
+              <li><a class="text-center" href="#schedule">Agenda</a></li>
+              <li><a class="text-center" href="#contact">Contato</a></li>
             </ul>
           </div>
         </div>
@@ -82,18 +95,18 @@ if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['telefone'])
 
     <section id="album">
       <div class="row">
-        <div class="format">
-          <div class="large-10 large-centered columns text-center">
+        <div class="large-10 large-centered columns text-center">
+          <div class="format">
             <div class="cover">
-              <div class="download right">
+              <div class="options right">
                 <ul class="side-nav">
                   <li>
-                    <a class="button radius" href="">MP3</a>
-                    <p>Para todo mundo</p>
+                    <a class="button radius" href="music/Renascentes-2014-MP3-320kbps.zip">MP3</a>
+                    <p>Para todo mundo.</p>
                   </li>
                   <li>
-                    <a class="button radius" href="">FLAC</a>
-                    <p>Para nerds de música</p>
+                    <a class="button radius" href="music/Renascentes-2014-FLAC.zip">FLAC</a>
+                    <p>Para nerds de música.</p>
                   </li>
                 </ul>
               </div>
@@ -105,15 +118,13 @@ if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['telefone'])
 
     <section id="band">
       <div class="row">
-        <div class="stream">
-          <div class="large-10 large-centered columns">
-<!-- <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/25884082&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe> -->
+
+        <div class="large-10 large-centered columns">
+          <div class="stream">
+
+              <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/30631417%3Fsecret_token%3Ds-1V3gW&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
             <p>
-              Também disponível no
-              <a href="">Spotify</a>,
-              <a href="">Rdio</a>,
-              <a href="">Deezer</a> e
-              <a href="">Grooveshark</a>
+              Também disponível no <a href="http://www.google.com/url?q=http%3A%2F%2Fgrooveshark.com%2F%23!%2Falbum%2FRenascentes%2F9649174&sa=D&sntz=1&usg=AFQjCNH6pR0VvH25CfSWuV2RReGRgwOEFQ">Grooveshark</a>.
             </p>
           </div>
         </div>
@@ -122,48 +133,32 @@ if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['telefone'])
 
     <section id="schedule">
       <div class="row">
+        <div class="large-7 large-centered columns">
           <div class="calendar">
-              <div class="large-7 large-centered columns">
-                <h2>Agenda</h2>
-                <table>
-                  <tr>
-                    <td class="day">18 de maio</td>
-                    <td class="city">Pindamonhegaba do Sudoeste ∙ Alber Hall</td>
-                  </tr>
-                  <tr>
-                    <td class="day">18 de maio</td>
-                    <td class="city">Pindamonhegaba do Sudoeste ∙ Alber Hall</td>
-                  </tr>
-                  <tr>
-                    <td class="day">18 de maio</td>
-                    <td class="city">Pindamonhegaba do Sudoeste ∙ Alber Hall</td>
-                  </tr>
-                  <tr>
-                    <td class="day">18 de maio</td>
-                    <td class="city">Pindamonhegaba do Sudoeste ∙ Alber Hall</td>
-                  </tr>
-                  <tr>
-                    <td class="day">18 de maio</td>
-                    <td class="city">Pindamonhegaba do Sudoeste ∙ Alber Hall</td>
-                  </tr>
-                  <tr>
-                    <td class="day">18 de maio</td>
-                    <td class="city">Pindamonhegaba do Sudoeste ∙ Alber Hall</td>
-                  </tr>
-                </table>
-              </div>
+            <h2>Agenda</h2>
+            <table>
+              <tr>
+                <td class="day">1º de maio</td>
+                <td class="city">Porto Alegre ∙ Teatro Renascença</td>
+              </tr>
+              <tr>
+                <td class="day">21 de maio</td>
+                <td class="city">Belo Horizonte ∙ A Obra</td>
+              </tr>
+            </table>
           </div>
+        </div>
       </div>
     </section>
 
     <section id="contact">
       <div class="row">
-        <div class="form">
-          <div class="large-10 large-centered columns">
+        <div class="large-6 large-centered columns">
+          <div class="form">
             <h2>Contato</h2>
-            <div class="typewriter">
-              <div class="row">
-                <div class="large-6 columns">
+            <div class="row">
+              <div class="typewriter clearfix">
+                <div class="large-12 columns">
                   <div class="contact">
                     <img src="images/typewriter.png">
                     <p>Mundo Grão Produções</p>
@@ -173,14 +168,15 @@ if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['telefone'])
                     </a>
                   </div>
                 </div>
-                <div class="large-6 columns">
+<!--                 <div class="large-6 columns">
                   <?php if ($isSuccess === true) : ?>
 
             <?php else : ?>
-                  <form action="<?php echo $_SERVER['PHP_SELF']; ?>#contato" role="form" class="std-form contact-form <?php if ($isSuccess === true){ echo 'success'; } ?>" method="post" id="contact-form">
-                    <fieldset>
-                      <legend>Formulário de contato </legend>
-
+                  <form action="<?php echo $_SERVER['PHP_SELF'];?>#contact"
+                        role="form"
+                        class="<?php if ($isSuccess === true){ echo 'success'; } ?>"
+                        method="post"
+                        id="contact-form">
                       <input name="nome" type="text" class="std-input"
                              placeholder="Nome" required />
 
@@ -193,11 +189,10 @@ if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['telefone'])
                       <textarea name="mensagem" id="message"
                                 class="std-input std-textarea" placeholder="Mensagem" required></textarea>
 
-                      <button class="std-btn send-form-btn" id="send-form">Enviar</button>
+                      <input type="submit" value="Enviar">
                       <?php if ($error === true) : ?>
                       <p class="error-message">Todos os campos são obrigatórios!</p>
                       <?php endif; ?>
-                    </fieldset>
 
                     <p class="success-msg">
                       <strong>Sua mensagem foi enviada!</strong>
@@ -207,8 +202,9 @@ if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['telefone'])
                   <?php endif; ?>
 
                 </div>
-              </div>
+              </div>-->
             </div>
+            <h4>Renascentes</h4>
           </div>
         </div>
       </div>
@@ -216,6 +212,17 @@ if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['telefone'])
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/jquery.flexverticalcenter.js"></script>
     <script src="js/app.js"></script>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-50001867-1', 'renascentes.com.br');
+    ga('send', 'pageview');
+
+    </script>
   </body>
 </html>
